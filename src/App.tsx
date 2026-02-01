@@ -47,7 +47,7 @@ export default function App() {
             position: "absolute",
             top: 16,
             right: 16,
-            height: 230,       // cambia qui se lo vuoi più grande/piccolo
+            height: 168,       // cambia qui se lo vuoi più grande/piccolo
             width: "auto",
             borderRadius: 8,  // opzionale
           }}
