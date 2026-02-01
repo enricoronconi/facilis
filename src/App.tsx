@@ -3,12 +3,7 @@ import React from "react";
 import "./styles.css";
 
 
-type Block =
-  | { kind: "title"; text: string }
-  | { kind: "text"; text: string }
-  | { kind: "sep" }
-  | { kind: "bullets"; items: string[] }
-  | { kind: "subbullets"; items: string[] };
+
 
 function Sep() {
   return <div className="sep">________________________________________</div>;
