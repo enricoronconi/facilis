@@ -45,7 +45,7 @@ export default function App() {
           alt="FacilisManagER Srl"
           style={{
             position: "absolute",
-            top: 16,
+            top: 8,
             right: 16,
             height: 60,       // cambia qui se lo vuoi più grande/piccolo
             width: "auto",
