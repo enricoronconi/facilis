@@ -1,6 +1,8 @@
 
 import React from "react";
 import "./styles.css";
+import logo from "./assets/logo.png";
+
 
 
 
@@ -37,16 +39,30 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 export default function App() {
   return (
     <div className="page">
-      <div className="card">
+      <div className="card" style={{ position: "relative" }}>
+        <img
+          src={logo}
+          alt="FacilisManagER Srl"
+          style={{
+            position: "absolute",
+            top: 16,
+            right: 16,
+            height: 230,       // cambia qui se lo vuoi più grande/piccolo
+            width: "auto",
+            borderRadius: 8,  // opzionale
+          }}
+        />
+
         {/* 🔷 SOCIETÀ DI MANAGEMENT */}
-        <TextLine text="🔷 SOCIETÀ DI MANAGEMENT" />
-        <TextLine text="FACILIS Srl" />
-        <TextLine text="Facilitazione tecnico-strategica a tutela dell’Assemblea Condominiale" />
-        <TextLine text="La società opera esclusivamente nell’interesse della committenza condominiale e delle decisioni assembleari." />
+        <div className="line"><strong>FacilisManagER Srl</strong></div>
+        <div className="line"><strong>SOCIETÀ DI MANAGEMENT</strong></div>
+                <TextLine text="Facilitazione tecnico-strategica a tutela dell’Assemblea Condominiale" />
+        <TextLine text="La società opera esclusivamente nell’interesse della committenza condominiale e" />
+        <TextLine text ="delle decisioni assembleari." />
         <Sep />
 
         {/* ✅ TITOLO DELLA FUNZIONE */}
-        <TextLine text="✅ TITOLO DELLA FUNZIONE " />
+        <div className="line"><strong>✅ FUNZIONE</strong></div>
         <TextLine text="Facilitazione tecnico-strategica a tutela dell’Assemblea Condominiale" />
         <TextLine text="(in coordinamento con Amministratore e Direzione Lavori)" />
         <Sep />
@@ -204,8 +220,56 @@ export default function App() {
               "•\tNon assume responsabilità esecutive",
               "•\tNon rappresento imprese o fornitori",
             ]}
-          />
+          />  
         </Section>
+        <Section title="📩 SEZIONE CONTATTO ">
+              {/* ───────────────────────────────────────────── */}
+          {/* 📩 SEZIONE CONTATTO */}
+          {/* ───────────────────────────────────────────── */}
+
+          <Sep />
+
+          <div className="line"><strong>📩 SEZIONE CONTATTO</strong></div>
+          <TextLine text="Compila i campi qui sotto: i dati ci arrivano via email e ti ricontattiamo telefonicamente." />
+          <TextLine text="La richiesta è senza impegno e serve solo per inquadrare correttamente il progetto." />
+
+          <form
+            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            method="POST"
+            style={{ display: "grid", gap: 12, marginTop: 12 }}
+          >
+            <input name="nome" placeholder="Nome" required />
+            <input name="cognome" placeholder="Cognome" required />
+            <input name="email" type="email" placeholder="Email" required />
+            <input name="telefono" placeholder="Telefono (consigliato)" />
+            <input name="indirizzo" placeholder="Indirizzo / Condominio / Città" required />
+
+            <textarea
+              name="descrizione_progetto"
+              placeholder="Descrizione progetto / problematica"
+              rows={5}
+              required
+            />
+
+            <input
+              name="valore_progetto"
+              placeholder="Valore del progetto allo stato attuale (€)"
+            />
+
+            <textarea
+              name="note"
+              placeholder="Note aggiuntive (urgenza, scadenze, vincoli, ecc.)"
+              rows={3}
+            />
+
+            <input type="hidden" name="_subject" value="Nuovo contatto dal sito FACILIS" />
+
+            <button type="submit" style={{ padding: "10px 14px", cursor: "pointer" }}>
+              Invia richiesta
+            </button>
+          </form>
+      </Section>
+
       </div>
     </div>
   );
