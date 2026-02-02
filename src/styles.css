@@ -90,8 +90,8 @@ body {
 
 .under-construction {
   position: fixed;
-  top: 1cm;          /* 👈 2 centimetri dal bordo superiore */
-  right: calc(16px + 10cm);       /* allineato a destra */
+  top: 0.7cm;          /* 👈 2 centimetri dal bordo superiore */
+  right: calc(16px + 5.5cm);       /* allineato a destra */
   left: auto;
   z-index: 1000;
 }
