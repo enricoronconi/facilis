@@ -239,7 +239,7 @@ export default function App() {
           <TextLine >La richiesta è senza impegno e serve solo per inquadrare correttamente il progetto.</TextLine>
 
           <form
-            action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+            action="https://formspree.io/f/meezpkpv"
             method="POST"
             style={{ display: "grid", gap: 12, marginTop: 12 }}
           >
@@ -272,7 +272,7 @@ export default function App() {
             <button type="submit" style={{ padding: "10px 14px", cursor: "pointer" }}>
               Invia richiesta
             </button>
-            
+
           </form>
       </Section>
 
