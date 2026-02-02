@@ -87,3 +87,18 @@ body {
   .twoCols { grid-template-columns: 1fr; }
   .card { padding: 14px 14px 8px; }
 }
+
+.under-construction {
+  position: fixed;
+  top: 1cm;          /* 👈 2 centimetri dal bordo superiore */
+  right: calc(16px + 10cm);       /* allineato a destra */
+  left: auto;
+  z-index: 1000;
+}
+
+.under-construction img {
+  width: 120px;
+  height: auto;
+}
+
+
