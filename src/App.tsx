@@ -272,6 +272,7 @@ export default function App() {
             <button type="submit" style={{ padding: "10px 14px", cursor: "pointer" }}>
               Invia richiesta
             </button>
+            
           </form>
       </Section>
 

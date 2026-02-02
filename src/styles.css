@@ -102,3 +102,50 @@ body {
 }
 
 
+/* 📱 MOBILE FIRST */
+@media (max-width: 768px) {
+
+  /* pagina più stretta */
+  .page {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  /* testi più leggibili */
+  .line {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* colonne → una sotto l’altra */
+  .twoCols {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .colBox {
+    width: 100%;
+  }
+
+  /* form comodo col pollice */
+  input,
+  textarea,
+  button {
+    font-size: 16px;   /* evita zoom automatico iOS */
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  /* badge meno invasivo */
+  .under-construction img {
+    width: 90px;
+  }
+}
+
+
