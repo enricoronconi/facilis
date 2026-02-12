@@ -5,8 +5,6 @@ import logo from "./assets/logo.png";
 import sitoInCostruzione from "./assets/sitoInCostruzione.png";
 
 
-
-
 function Sep() {
   return <div className="sep">___________________________________________________________________</div>;
 }
@@ -16,11 +14,9 @@ function Sep2() {
 }
 
 
-
 function TextLine({ children }: { children: React.ReactNode }) {
   return <div className="line">{children}</div>;
 }
-
 
 
 function Bullets({ items }: { items: React.ReactNode[] }) {
